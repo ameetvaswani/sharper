@@ -1,0 +1,15 @@
+:root { color-scheme: light dark; --ink: #1c1c1e; --soft: #6b6b70; --bg: #f5f4f0; --card: #ffffff; --accent: #1a9999; }
+@media (prefers-color-scheme: dark) { :root { --ink: #f2f2f4; --soft: #a1a1a8; --bg: #111113; --card: #1c1c1f; } }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif; }
+main { max-width: 680px; margin: 0 auto; padding: 56px 24px 80px; }
+h1, h2 { font-family: "New York", "Iowan Old Style", Georgia, serif; font-weight: 600; line-height: 1.2; }
+h1 { font-size: 40px; margin: 0 0 8px; }
+h2 { font-size: 22px; margin: 36px 0 8px; }
+.lead { color: var(--soft); font-size: 19px; margin: 0 0 28px; }
+.chips { display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 32px; }
+.chip { background: color-mix(in srgb, var(--accent) 14%, transparent); color: var(--accent); font-weight: 600; font-size: 14px; padding: 6px 12px; border-radius: 999px; }
+.card { background: var(--card); border-radius: 20px; padding: 22px 24px; margin: 16px 0; }
+a { color: var(--accent); }
+footer { color: var(--soft); font-size: 14px; margin-top: 48px; }
+nav a { margin-right: 18px; font-weight: 600; text-decoration: none; }
